@@ -10,19 +10,37 @@ body {
     background-image: linear-gradient(#212B38, rgba(0, 76, 255, 0.753));
 }
 
-ul li { 
+ul.nav {
+    /* border: 5px solid green; */
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.nav li  { 
     /* color: blue; */
+    /* border: 2px solid red; */
 }
 
 h1.title {
     /* color:blue; */
     font-size: 52px;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+div.headImageContainer {
+    border: 2px solid purple;
+    width: 50%;
+    margin: 0 auto;
 }
 
 img { 
     border: 5px solid black;
     border-radius: 25px;
 }
+
 
 @media (max-width: 800px) {
     html,
