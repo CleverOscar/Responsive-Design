@@ -15,7 +15,6 @@ ul.nav {
     list-style: none;
     font-size: 20px;
     display: flex;
-    justify-content: space-between;
 }
 
 ul.nav li  { 
@@ -31,9 +30,10 @@ h1.title {
 }
 
 div.headImageContainer {
-    border: 2px solid purple;
     width: 50%;
     margin: 0 auto;
+    width: fit-content;
+    text-align: center;
 }
 
 img { 
@@ -49,6 +49,8 @@ img {
     }
 }
 
+    /* Mobile Body Style */
+
 @media (max-width: 500px) {
 
     body {
@@ -56,14 +58,16 @@ img {
     }
 
     ul {
-        list-style: none
+        list-style: none;
+        /* border: 2px solid red; */
+        padding: inherit;
+        justify-content: space-evenly;
     }
 
-    li {
+    ul.nav li {
         border: 2px solid black;
-        width: auto;
-        margin: 10px 0px;
-        padding: 10px
+        padding: 5px;
+        border-style: dotted;
     }
 }
 
