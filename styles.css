@@ -97,8 +97,12 @@ img {
 
     img.img-container  {
         background: black;
-        width: 40%;
-        height: 50%;
+        width: 100%;
+        height: 65%;
+    }
+
+    figcaption {
+        font-size: 20px;
     }
 
     div.image-wrapper {
