@@ -1,4 +1,4 @@
-html , body {
+html {
     height: 100%;
 }
 
@@ -6,8 +6,7 @@ body {
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    color: white;
-    background-image: linear-gradient(#212B38, rgba(0, 76, 255, 0.753));
+    color: black;
 }
 
 ul.nav {
@@ -53,10 +52,18 @@ img {
 
 @media (max-width: 500px) {
 
+    /* html {
+        height: 100%;
+        background-image: linear-gradient(#212B38, rgba(0, 76, 255, 0.753));
+    } */
+
     body {
+        width: 100%;
         text-align: center
     }
 
+
+    /* navbar styles */
     ul {
         list-style: none;
         /* border: 2px solid red; */
@@ -64,11 +71,51 @@ img {
         justify-content: space-evenly;
     }
 
+    ul.nav {
+        flex-direction: column;
+    }
+
     ul.nav li {
         border: 2px solid black;
-        padding: 5px;
+        padding: 10px;
         border-style: dotted;
+        width: 50%;
+        margin: 5px auto;
     }
+
+    /* navbar hover affect */
+    ul.nav li:hover {
+        background-color: blue;
+    }
+
+    /* projects styles  */
+
+    img.img-container  {
+        background: black;
+        width: 40%;
+        height: 50%;
+    }
+
+    div.image-wrapper {
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    /* footer styles  */
+    footer.footer {
+        background-color: rgb(91, 110, 219);
+        height: 150px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    button.contact {
+        height: 25px;
+    }
+
 }
 
 @media (max-width: 420px) {
